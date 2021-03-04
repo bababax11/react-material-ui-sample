@@ -1,6 +1,15 @@
-import React from "react";
-import GenericTemplate from "../templates/GenericTemplate";
-import { makeStyles, TableContainer, TableHead, TableRow, Paper, Table, TableCell, TableBody } from "@material-ui/core";
+import React from 'react'
+import GenericTemplate from '../templates/GenericTemplate'
+import {
+  makeStyles,
+  TableContainer,
+  TableHead,
+  TableRow,
+  Paper,
+  Table,
+  TableCell,
+  TableBody,
+} from '@material-ui/core'
 
 const createData = (
   name: string,
@@ -8,21 +17,21 @@ const createData = (
   weight: number,
   price: number
 ) => {
-  return {name, category, weight, price}
+  return { name, category, weight, price }
 }
 
 const rows = [
-  createData("チョコレート", "お菓子", 100, 120),
-  createData("ケーキ", "お菓子", 400, 480),
-  createData("りんご", "フルーツ", 500, 360),
-  createData("バナナ", "フルーツ", 200, 300),
-  createData("みかん", "フルーツ", 250, 180),
+  createData('チョコレート', 'お菓子', 100, 120),
+  createData('ケーキ', 'お菓子', 400, 480),
+  createData('りんご', 'フルーツ', 500, 360),
+  createData('バナナ', 'フルーツ', 200, 300),
+  createData('みかん', 'フルーツ', 250, 180),
 ]
 
 const useStyles = makeStyles({
   table: {
-    minWidth: 650
-  }
+    minWidth: 650,
+  },
 })
 
 const ProductPage: React.FC = () => {
